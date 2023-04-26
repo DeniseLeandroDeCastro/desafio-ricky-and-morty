@@ -3,18 +3,29 @@
 
     <!--ListFragment-->
     <string name="search_hint">Nome</string>
-    <string name="title_characters">Characters</string>
+    <string name="title_characters">Personagens</string>
     <string name="title_reset">Reset</string>
     <string name="text_error">%1$d - Characters not found!</string>
 
     <!--FilterFragment-->
-    <string name="title_filter">Filter</string>
+    <string name="title_filter">Filtro</string>
+
+    <!--ChipGroup / Status-->
     <string name="txt_status">Status</string>
     <string name="txt_alive">alive</string>
     <string name="txt_dead">dead</string>
     <string name="txt_unknown">unknown</string>
+
+    <!--ChipGroup / Gender-->
+    <string name="txt_gender">Gender</string>
+    <string name="txt_male">male</string>
+    <string name="txt_female">female</string>
+    <string name="txt_clear">Clear</string>
+
+    <!--Button-->
+    <string name="btn_filter">Filtrar</string>
+
     <string name="edt_nome">Nome</string>
-    <string name="title_apply">Filtrar</string>
     <string name="character_name">Rick Sanchez</string>
     <string name="character_specie">Human</string>
     <string name="character_status">Alive</string>
@@ -24,11 +35,8 @@
     <string name="status">Status:</string>
     <string name="gender">Gender:</string>
     <string name="type">Type:</string>
-    <string name="character_type">-x-</string>
-    <string name="txt_male">male</string>
-    <string name="txt_female">female</string>
-    <string name="txt_gender">Gender</string>
-    <string name="txt_clear">Clear</string>
     <string name="id">Id.:</string>
     <string name="character_id">1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
