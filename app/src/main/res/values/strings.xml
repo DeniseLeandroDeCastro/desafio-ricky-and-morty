@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Desafio Rick and Morty</string>
+    <string name="app_name">Rick and Morty</string>
 
     <!--ListFragment-->
-    <string name="search_hint">Nome</string>
+    <string name="search_hint">Buscar personagem pelo nome</string>
     <string name="title_characters">Personagens</string>
     <string name="title_reset">Reset</string>
     <string name="text_error">%1$d - Characters not found!</string>
@@ -10,33 +10,30 @@
     <!--FilterFragment-->
     <string name="title_filter">Filtro</string>
 
+    <!--FilterDetaiil-->
+    <string name="txt_id">1</string>
+    <string name="txt_name">Rick Sanchez</string>
+    <string name="txt_specie">Human</string>
+    <string name="title_origin">Origin</string>
+    <string name="txt_origin">Earth (C - 137)</string>
+    <string name="title_location">Location</string>
+    <string name="txt_location">Earth </string>
+    <string name="title_episodes">Episodes </string>
+    <string name="txt_episodes">41 </string>
+
     <!--ChipGroup / Status-->
     <string name="txt_status">Status</string>
-    <string name="txt_alive">alive</string>
+    <string name="txt_alive">Alive</string>
     <string name="txt_dead">dead</string>
     <string name="txt_unknown">unknown</string>
 
     <!--ChipGroup / Gender-->
     <string name="txt_gender">Gender</string>
-    <string name="txt_male">male</string>
+    <string name="txt_male">Male</string>
     <string name="txt_female">female</string>
     <string name="txt_clear">Clear</string>
 
     <!--Button-->
     <string name="btn_filter">Filtrar</string>
 
-    <string name="edt_nome">Nome</string>
-    <string name="character_name">Rick Sanchez</string>
-    <string name="character_specie">Human</string>
-    <string name="character_status">Alive</string>
-    <string name="character_gender">Male</string>
-    <string name="nome">Name:</string>
-    <string name="specie">Specie:</string>
-    <string name="status">Status:</string>
-    <string name="gender">Gender:</string>
-    <string name="type">Type:</string>
-    <string name="id">Id.:</string>
-    <string name="character_id">1</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

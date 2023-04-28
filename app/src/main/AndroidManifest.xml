@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,7 +16,8 @@
         android:theme="@style/Theme.DesafioRickAndMorty"
         tools:targetApi="31">
         <activity
-            android:name=".view.activity.MainActivity"
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,5 +30,4 @@
                 android:value="" />
         </activity>
     </application>
-
 </manifest>

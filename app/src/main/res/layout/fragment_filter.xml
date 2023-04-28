@@ -5,11 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    tools:context=".FilterFragment">
+    android:background="@color/colorPrimaryDark"
+    tools:context=".view.filter.FilterFragment">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/title_filter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
@@ -31,13 +31,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/title_filter"
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
+            android:id="@+id/title_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/status"
+            android:text="@string/txt_status"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -80,10 +81,11 @@
         </com.google.android.material.chip.ChipGroup>
 
         <TextView
+            android:id="@+id/title_gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:text="@string/gender"
+            android:text="@string/txt_gender"
             android:textSize="18sp"
             android:textStyle="bold" />
 

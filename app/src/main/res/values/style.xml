@@ -5,6 +5,10 @@
         <item name="chipStrokeColor">@color/chip_selector_color</item>
         <item name="chipStrokeWidth">2dp</item>
         <item name="chipCornerRadius">4dp</item>
-        <item name="chipBackgroundColor">@color/colorPrimary</item>
+        <item name="chipBackgroundColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="TextColor">
+        <item name="android:textColor">@color/text_blue_color</item>
     </style>
 </resources>
