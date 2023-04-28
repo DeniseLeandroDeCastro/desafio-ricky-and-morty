@@ -1,5 +1,9 @@
 package br.com.denisecastro.desafiorickandmorty.model
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class Character(
     var id: Int,
     var name: String,
@@ -10,4 +14,4 @@ data class Character(
     var location: LocationData,
     var image: String,
     var episode: List<String>
-)
+):Parcelable

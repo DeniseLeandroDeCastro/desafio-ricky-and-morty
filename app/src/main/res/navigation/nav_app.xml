@@ -27,5 +27,9 @@
         android:id="@+id/detailFragment"
         android:name="br.com.denisecastro.desafiorickandmorty.view.detail.DetailFragment"
         android:label=""
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="character"
+            app:argType="br.com.denisecastro.desafiorickandmorty.model.Character" />
+    </fragment>
 </navigation>

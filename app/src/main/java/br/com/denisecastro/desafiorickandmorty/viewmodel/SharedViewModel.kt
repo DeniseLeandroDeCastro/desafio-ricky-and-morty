@@ -55,6 +55,7 @@ class SharedViewModel(val repository: Repository): ViewModel() {
         viewModelScope.launch {
             val characters = repository.getCharactersByName(name, page)
             listCharacters.value = characters
+            isFilter.value = true
         }
     }
 }

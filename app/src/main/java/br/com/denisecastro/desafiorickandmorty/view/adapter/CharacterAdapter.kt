@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import br.com.denisecastro.desafiorickandmorty.R
 import br.com.denisecastro.desafiorickandmorty.model.Character
 import br.com.denisecastro.desafiorickandmorty.databinding.ItemListBinding
+import br.com.denisecastro.desafiorickandmorty.view.list.ListFragmentDirections
 import com.squareup.picasso.Picasso
 
 class CharacterAdapter: RecyclerView.Adapter<CharacterAdapter.CharacterViewHolder>() {
@@ -19,6 +20,11 @@ class CharacterAdapter: RecyclerView.Adapter<CharacterAdapter.CharacterViewHolde
             binding.txtNameCharacter.text = character.name
             binding.txtStatusCharacter.text = character.status
             Picasso.get().load(character.image).into(binding.imgCharacter)
+
+            itemView.setOnClickListener { view ->
+                val action = ListFragmentDirections.actionListFragmentToDetailFragment(character)
+                view.findNavController().navigate(action)
+            }
         }
     }
 
@@ -30,9 +36,6 @@ class CharacterAdapter: RecyclerView.Adapter<CharacterAdapter.CharacterViewHolde
 
     override fun onBindViewHolder(holder: CharacterViewHolder, position: Int) {
         holder.bind(listCharacters[position])
-        holder.itemView.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_listFragment_to_detailFragment)
-        }
     }
 
     override fun getItemCount(): Int {

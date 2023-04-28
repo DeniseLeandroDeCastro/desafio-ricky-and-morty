@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -20,9 +21,7 @@ class ListFragment : Fragment() {
 
     private var _binding: FragmentListBinding? = null
     private val binding get() = _binding!!
-    private val sharedViewModel: SharedViewModel by activityViewModels { SharedViewModelFactory(
-        Repository()
-    ) }
+    private val sharedViewModel: SharedViewModel by activityViewModels { SharedViewModelFactory(Repository()) }
     private var adapter = CharacterAdapter()
 
     override fun onAttach(context: Context) {
@@ -56,7 +55,6 @@ class ListFragment : Fragment() {
         }
             recyclerView.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
             recyclerView.adapter = adapter
-
             imgButtonFilter.setOnClickListener {
                 findNavController().navigate(R.id.action_listFragment_to_filterFragment)
             }
@@ -67,6 +65,24 @@ class ListFragment : Fragment() {
                 getCharactersFromViewModel()
                 sharedViewModel.filterValue.value = arrayOf(0, 0)
             }
+        }
+
+        getNameSearchView()
+    }
+
+    private fun getNameSearchView() {
+        binding.apply {
+            searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+                override fun onQueryTextSubmit(query: String?): Boolean {
+                    sharedViewModel.getByName(query.toString(), 1)
+                    searchView.setQuery("", false)
+                    searchView.clearFocus()
+                    return false
+                }
+                override fun onQueryTextChange(newText: String?): Boolean {
+                    return false
+                }
+            })
         }
     }
 
