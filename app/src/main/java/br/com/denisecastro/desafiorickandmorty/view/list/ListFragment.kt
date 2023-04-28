@@ -27,7 +27,7 @@ class ListFragment : Fragment() {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        sharedViewModel.getCharacters(1)
+        getCharactersFromViewModel()
     }
 
     override fun onCreateView(
@@ -60,7 +60,18 @@ class ListFragment : Fragment() {
             imgButtonFilter.setOnClickListener {
                 findNavController().navigate(R.id.action_listFragment_to_filterFragment)
             }
+            sharedViewModel.isFilter.observe(viewLifecycleOwner) {
+                titleActionReset.visibility = if (it) View.VISIBLE else View.INVISIBLE
+            }
+            titleActionReset.setOnClickListener {
+                getCharactersFromViewModel()
+                sharedViewModel.filterValue.value = arrayOf(0, 0)
+            }
         }
+    }
+
+    private fun getCharactersFromViewModel() {
+        sharedViewModel.getCharacters(1)
     }
 
     override fun onDestroy() {
