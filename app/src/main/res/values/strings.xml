@@ -24,14 +24,15 @@
     <!--ChipGroup / Status-->
     <string name="txt_status">Status</string>
     <string name="txt_alive">Alive</string>
-    <string name="txt_dead">dead</string>
-    <string name="txt_unknown">unknown</string>
+    <string name="txt_dead">Dead</string>
+    <string name="txt_unknown">Unknown</string>
 
     <!--ChipGroup / Gender-->
     <string name="txt_gender">Gender</string>
     <string name="txt_male">Male</string>
-    <string name="txt_female">female</string>
-    <string name="txt_clear">Clear</string>
+    <string name="txt_female">Female</string>
+    <string name="txt_genderless">Genderless</string>
+    <string name="title_clear">Clear</string>
 
     <!--Button-->
     <string name="btn_filter">Filtrar</string>
