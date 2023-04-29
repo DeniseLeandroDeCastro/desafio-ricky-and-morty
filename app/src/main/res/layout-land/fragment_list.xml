@@ -9,7 +9,7 @@
     tools:context=".view.list.ListFragment">
 
     <androidx.appcompat.widget.SearchView
-        android:id="@+id/searchView"
+        android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -33,7 +33,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/img_button_filter"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/searchView" />
+        app:layout_constraintTop_toTopOf="@+id/search_view" />
 
     <ImageView
         android:id="@+id/img_button_filter"
@@ -46,7 +46,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/recycler_view"
-        app:layout_constraintTop_toTopOf="@+id/searchView" />
+        app:layout_constraintTop_toTopOf="@+id/search_view" />
 
     <TextView
         android:id="@+id/title_action_reset"

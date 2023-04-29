@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Item List / Landscape -->
+    <dimen name="width_card_item_list">360dp</dimen>
+
+    <!-- Item List -->
+    <dimen name="height_card_item_list">220dp</dimen>
+    <dimen name="corner_radius_card_item_list">8dp</dimen>
+    <dimen name="margin_top_card_item_list">16dp</dimen>
+    <dimen name="margin_start_card_item_list">18dp</dimen>
+    <dimen name="margin_end_card_item_list">18dp</dimen>
+
+    <!-- Item List / CardView que contém o id do personagem-->
+    <dimen name="width_card_view_id_character">25dp</dimen>
+    <dimen name="height_card_view_id_character">25dp</dimen>
+    <dimen name="margin_start_card_view_id_character">8dp</dimen>
+    <dimen name="margin_top_card_view_id_character">8dp</dimen>
+    <dimen name="padding_card_view_id_character">4dp</dimen>
+    <dimen name="corner_radius_card_view_id_character">16dp</dimen>
+
+    <!-- Item List / TextView name character-->
+    <dimen name="text_size_name_character">16sp</dimen>
+    <dimen name="margin_start_name_character">12dp</dimen>
+    <dimen name="margin_end_name_character">12dp</dimen>
+    <dimen name="margin_top_name_character">4dp</dimen>
+
+    <!-- Item List / TextView status character-->
+    <dimen name="text_size_status_character">14sp</dimen>
+    <dimen name="margin_start_status_character">12dp</dimen>
+    <dimen name="margin_end_status_character">12dp</dimen>
+    <dimen name="margin_top_status_character">8dp</dimen>
+    <dimen name="margin_bottom_status_character">4dp</dimen>
+
+    <!-- Fragment List -->
+    <dimen name="layout_width_search_view">360dp</dimen>
+    <dimen name="margin_start_search_view">16dp</dimen>
+    <dimen name="margin_top_search_view">16dp</dimen>
+    <dimen name="margin_end_search_view">16dp</dimen>
+
+    <!-- Fragment List / title characters-->
+    <dimen name="text_size_title_characters">18sp</dimen>
+    <dimen name="margin_start_title_characters">16dp</dimen>
+    <dimen name="margin_top_title_characters">60dp</dimen>
+
+    <!-- Fragment List / image button filter-->
+    <dimen name="layout_width_image_button_filter">30dp</dimen>
+    <dimen name="layout_height_image_button_filter">30dp</dimen>
+    <dimen name="margin_top_image_button_filter">60dp</dimen>
+    <dimen name="margin_end_image_button_filter">16dp</dimen>
+
+    <!-- Fragment List / title action reset-->
+    <dimen name="margin_end_title_action_reset">16dp</dimen>
+    <dimen name="text_size_title_action_reset">16sp</dimen>
+
+    <!-- Fragment List / recycler view-->
+    <dimen name="margin_start_recycler_view">16dp</dimen>
+    <dimen name="margin_top_recycler_view">36dp</dimen>
+    <dimen name="margin_end_recycler_view">16dp</dimen>
+    <dimen name="margin_bottom_recycler_view">16dp</dimen>
+
+    <!-- Fragment List / text api error-->
+    <dimen name="text_size_api_error">18sp</dimen>
+</resources>

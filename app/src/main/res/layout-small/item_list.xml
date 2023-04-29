@@ -4,11 +4,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="220dp"
-    app:cardCornerRadius="8dp"
-    android:layout_marginTop="16dp"
-    android:layout_marginStart="18dp"
-    android:layout_marginEnd="18dp">
+    android:layout_height="@dimen/height_card_item_list"
+    app:cardCornerRadius="@dimen/corner_radius_card_item_list"
+    android:layout_marginTop="@dimen/margin_top_card_item_list"
+    android:layout_marginStart="@dimen/margin_start_card_item_list"
+    android:layout_marginEnd="@dimen/margin_end_card_item_list">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -27,14 +27,14 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:padding="4dp"
+            android:id="@+id/card_view"
+            android:layout_width="@dimen/width_card_view_id_character"
+            android:layout_height="@dimen/height_card_view_id_character"
+            android:layout_marginStart="@dimen/margin_start_card_view_id_character"
+            android:layout_marginTop="@dimen/margin_top_card_view_id_character"
+            android:padding="@dimen/padding_card_view_id_character"
             app:cardBackgroundColor="@color/black"
-            app:cardCornerRadius="16dp"
+            app:cardCornerRadius="@dimen/corner_radius_card_view_id_character"
             app:layout_constraintStart_toStartOf="@+id/img_character"
             app:layout_constraintTop_toTopOf="@+id/img_character">
 
@@ -64,22 +64,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="Rick Sanchez"
-                android:textSize="16sp"
+                android:textSize="@dimen/text_size_name_character"
                 android:textStyle="bold"
-                android:layout_marginStart="12dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginTop="4dp"/>
+                android:layout_marginStart="@dimen/margin_start_name_character"
+                android:layout_marginEnd="@dimen/margin_end_name_character"
+                android:layout_marginTop="@dimen/margin_top_name_character"/>
 
             <TextView
                 android:id="@+id/txt_status_character"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="Alive"
-                android:textSize="14sp"
-                android:layout_marginStart="12dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="4dp"/>
+                android:textSize="@dimen/text_size_status_character"
+                android:layout_marginStart="@dimen/margin_start_status_character"
+                android:layout_marginEnd="@dimen/margin_end_status_character"
+                android:layout_marginTop="@dimen/margin_top_status_character"
+                android:layout_marginBottom="@dimen/margin_bottom_status_character"/>
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
