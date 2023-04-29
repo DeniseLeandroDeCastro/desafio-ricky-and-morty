@@ -12,9 +12,6 @@
         android:id="@+id/title_filter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:padding="16dp"
         android:text="@string/title_filter"
         android:textSize="18sp"
@@ -49,7 +46,7 @@
             android:id="@+id/chipgroup_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             app:singleSelection="true">
 
             <com.google.android.material.chip.Chip
@@ -92,11 +89,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:layout_marginBottom="8dp"
                 android:text="@string/txt_gender"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -104,7 +99,6 @@
                 android:id="@+id/clear_chip_check"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:text="@string/title_clear"
                 android:textColor="@color/text_blue_color"
                 android:textSize="18sp"
@@ -117,8 +111,8 @@
             android:id="@+id/chipgroup_gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"
             app:singleSelection="true">
 
             <com.google.android.material.chip.Chip
@@ -168,16 +162,16 @@
         android:id="@+id/btn_apply_filter"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="32dp"
         android:background="@drawable/background_button"
         android:text="@string/btn_filter"
         android:textColor="@color/black"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.78" />
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,9 +19,10 @@
         android:background="@drawable/background_painel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <TextView
             android:id="@+id/txt_status"
@@ -148,7 +149,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title_origin"
-            app:layout_constraintVertical_bias="0.05" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/title_location"
@@ -166,7 +167,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_n_episodes"
-            app:layout_constraintVertical_bias="0.218" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/txt_location"
@@ -174,7 +175,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
             android:maxLines="1"
             android:text="@string/txt_location"
@@ -191,34 +192,33 @@
             style="@style/TextColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="8dp"
             android:text="@string/title_episodes"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.79"
+            app:layout_constraintHorizontal_bias="0.92"
             app:layout_constraintStart_toEndOf="@+id/title_origin"
             app:layout_constraintTop_toBottomOf="@+id/txt_specie"
-            app:layout_constraintVertical_bias="0.027" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/txt_n_episodes"
             style="@style/TextColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
             android:layout_marginEnd="16dp"
             android:text="@string/txt_episodes"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.84"
-            app:layout_constraintStart_toEndOf="@+id/title_episodes"
-            app:layout_constraintTop_toTopOf="@+id/title_episodes"
+            app:layout_constraintHorizontal_bias="0.79"
+            app:layout_constraintStart_toEndOf="@+id/txt_origin"
+            app:layout_constraintTop_toBottomOf="@+id/title_episodes"
             app:layout_constraintVertical_bias="0.0" />
 
 
