@@ -229,10 +229,6 @@ interface SimpleApi {
 ```
 
 
-### Resultado do comando ./gradlew connectedCheck:
-
-![image](https://user-images.githubusercontent.com/29150094/235357408-94ea57ca-ef2d-4c92-97d5-8a7c81a78361.png)
-
 
 
 
