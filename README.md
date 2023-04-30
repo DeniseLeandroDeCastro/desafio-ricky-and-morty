@@ -219,3 +219,20 @@ interface SimpleApi {
 <p> Ao clicar no personagem, deve ser possível navegar para a tela de detalhes.</p>
 
 <p> <img src="https://user-images.githubusercontent.com/29150094/235274445-04620b15-0a01-44e1-a0f6-a30918e1a7e3.png" width="360" hight="640"/> </p>
+
+### O seguintes comandos devem funcionar:
+
+```
+./gradlew build
+./gradlew connectedCheck
+./gradlew lintKotlin
+```
+
+
+### Resultado do comando ./gradlew connectedCheck:
+
+![image](https://user-images.githubusercontent.com/29150094/235357408-94ea57ca-ef2d-4c92-97d5-8a7c81a78361.png)
+
+
+
+
