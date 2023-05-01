@@ -220,6 +220,93 @@ interface SimpleApi {
 
 <p> <img src="https://user-images.githubusercontent.com/29150094/235274445-04620b15-0a01-44e1-a0f6-a30918e1a7e3.png" width="360" hight="640"/> </p>
 
+
+### Teste de UI para verificar se o titulo "Personagens" está sendo exibido na tela:
+
+```
+import androidx.test.core.app.ActivityScenario.launch
+import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.assertion.ViewAssertions.matches
+import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
+import androidx.test.espresso.matcher.ViewMatchers.withText
+import org.junit.Test
+
+
+class ActivityListTest {
+
+    @Test
+    fun toShowTitleCharacter() {
+        launch(MainActivity::class.java)
+        onView(withText("Personagens")).check(matches(isDisplayed()))
+    }
+}
+```
+
+### Resultado do teste com sucesso:
+
+![image](https://user-images.githubusercontent.com/29150094/235462516-71c50889-0d95-47fb-a5a3-72d2ea32f452.png)
+
+
+### Para saber se o teste funciona mesmo, é preciso fazê-lo falhar, sendo assim, alterei o nome para "Personagem", e o teste falhou:
+
+```
+import androidx.test.core.app.ActivityScenario.launch
+import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.assertion.ViewAssertions.matches
+import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
+import androidx.test.espresso.matcher.ViewMatchers.withText
+import org.junit.Test
+
+
+class ActivityListTest {
+
+    @Test
+    fun toShowTitleCharacter() {
+        launch(MainActivity::class.java)
+        onView(withText("Personagem")).check(matches(isDisplayed()))
+    }
+}
+
+```
+
+![image](https://user-images.githubusercontent.com/29150094/235463485-5c1b0cd1-ba84-40e0-9b53-d205fc2e0048.png)
+
+### Teste de UI para verificar se o o campo para pesquisa do personagem por nome está sendo exibido na tela:
+
+```
+package br.com.denisecastro.desafiorickandmorty
+
+import androidx.test.core.app.ActivityScenario.launch
+import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.assertion.ViewAssertions.matches
+import androidx.test.espresso.matcher.ViewMatchers.*
+import org.junit.Test
+
+
+class ActivityListTest {
+
+    @Test
+    fun toShowTitleCharacter() {
+        launch(MainActivity::class.java)
+        onView(withText("Personagens")).check(matches(isDisplayed()))
+    }
+
+    @Test
+    fun shouldShowFieldToSearchByCharacterName() {
+        launch(MainActivity::class.java)
+        onView(withId(R.id.search_view)).check(matches(isDisplayed()))
+    }
+}
+
+```
+
+### Resultado do teste com sucesso:
+
+![image](https://user-images.githubusercontent.com/29150094/235468365-64ee69af-06a0-4b78-88f3-86137a6dc6dd.png)
+
+### Resultado do teste com falha:
+
+
 ### O seguintes comandos devem funcionar:
 
 ```
@@ -232,6 +319,9 @@ interface SimpleApi {
 
 ![image](https://user-images.githubusercontent.com/29150094/235439766-205dd9f8-9718-4800-9545-4b8e87e28001.png)
 
+### Resultado do comando ./gradlew connectedCheck
 
+![image](https://user-images.githubusercontent.com/29150094/235469505-b0514534-2125-45c9-a7d3-01549b1c77a7.png)
 
+### Resultado do comando ./gradlew lintKotlin
 
