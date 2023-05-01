@@ -304,8 +304,6 @@ class ActivityListTest {
 
 ![image](https://user-images.githubusercontent.com/29150094/235468365-64ee69af-06a0-4b78-88f3-86137a6dc6dd.png)
 
-### Resultado do teste com falha:
-
 
 ### O seguintes comandos devem funcionar:
 
