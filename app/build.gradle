@@ -5,6 +5,7 @@ plugins {
     id 'dagger.hilt.android.plugin'
     id 'androidx.navigation.safeargs.kotlin'
     id 'kotlin-parcelize'
+    id 'org.jmailen.kotlinter'
 
 }
 
@@ -41,9 +42,9 @@ android {
 }
 
 dependencies {
+    def roomVersion = "2.5.1"
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
-    def roomVersion = "2.5.1"
 
     //Room database
     implementation "androidx.room:room-runtime:$roomVersion"
