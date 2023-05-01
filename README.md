@@ -322,6 +322,3 @@ class ActivityListTest {
 ### Resultado do comando ./gradlew connectedCheck
 
 ![image](https://user-images.githubusercontent.com/29150094/235469505-b0514534-2125-45c9-a7d3-01549b1c77a7.png)
-
-### Resultado do comando ./gradlew lintKotlin
-
