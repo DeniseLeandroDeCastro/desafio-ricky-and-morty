@@ -228,7 +228,7 @@ interface SimpleApi {
 ./gradlew lintKotlin
 ```
 
-### Resultado do comando ./gradlew buil
+### Resultado do comando ./gradlew build
 
 ![image](https://user-images.githubusercontent.com/29150094/235439766-205dd9f8-9718-4800-9545-4b8e87e28001.png)
 
