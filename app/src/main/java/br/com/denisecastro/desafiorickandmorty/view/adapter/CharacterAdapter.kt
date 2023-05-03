@@ -4,9 +4,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import br.com.denisecastro.desafiorickandmorty.R
-import br.com.denisecastro.desafiorickandmorty.model.Character
 import br.com.denisecastro.desafiorickandmorty.databinding.ItemListBinding
+import br.com.denisecastro.desafiorickandmorty.model.Character
 import br.com.denisecastro.desafiorickandmorty.view.list.ListFragmentDirections
 import com.squareup.picasso.Picasso
 
